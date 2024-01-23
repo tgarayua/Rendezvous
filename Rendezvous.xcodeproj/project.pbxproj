@@ -17,6 +17,9 @@
 		1356E7792B5C2DA000DCE99E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356E7782B5C2DA000DCE99E /* NotificationView.swift */; };
 		1356E77B2B5C2DBF00DCE99E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356E77A2B5C2DBF00DCE99E /* SettingsView.swift */; };
 		1356E77D2B5C2E3300DCE99E /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1356E77C2B5C2E3300DCE99E /* NavigationBarView.swift */; };
+		137199E02B5F503700936C13 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137199DF2B5F503700936C13 /* LoginView.swift */; };
+		137199E32B5F51EC00936C13 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137199E22B5F51EC00936C13 /* InputView.swift */; };
+		137199E52B5F586C00936C13 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137199E42B5F586C00936C13 /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		1356E7782B5C2DA000DCE99E /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		1356E77A2B5C2DBF00DCE99E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1356E77C2B5C2E3300DCE99E /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		137199DF2B5F503700936C13 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		137199E22B5F51EC00936C13 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		137199E42B5F586C00936C13 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 				1356E7712B5C28E000DCE99E /* Model */,
 				1356E7702B5C28D900DCE99E /* View */,
 				1356E76F2B5C28CE00DCE99E /* ViewModel */,
+				137199E12B5F51B000936C13 /* Components */,
 				1356E7662B5C275D00DCE99E /* Preview Content */,
 			);
 			path = Rendezvous;
@@ -99,6 +106,7 @@
 		1356E7702B5C28D900DCE99E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				137199DE2B5F4FCC00936C13 /* Authentfication */,
 				1356E7622B5C275D00DCE99E /* SplashScreenView.swift */,
 				1356E7722B5C292B00DCE99E /* HomeView.swift */,
 				1356E7742B5C2D6E00DCE99E /* EventView.swift */,
@@ -115,6 +123,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		137199DE2B5F4FCC00936C13 /* Authentfication */ = {
+			isa = PBXGroup;
+			children = (
+				137199DF2B5F503700936C13 /* LoginView.swift */,
+				137199E42B5F586C00936C13 /* RegistrationView.swift */,
+			);
+			path = Authentfication;
+			sourceTree = "<group>";
+		};
+		137199E12B5F51B000936C13 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				137199E22B5F51EC00936C13 /* InputView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,12 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137199E52B5F586C00936C13 /* RegistrationView.swift in Sources */,
 				1356E77B2B5C2DBF00DCE99E /* SettingsView.swift in Sources */,
 				1356E7772B5C2D7F00DCE99E /* CalendarView.swift in Sources */,
 				1356E77D2B5C2E3300DCE99E /* NavigationBarView.swift in Sources */,
+				137199E02B5F503700936C13 /* LoginView.swift in Sources */,
 				1356E7732B5C292B00DCE99E /* HomeView.swift in Sources */,
 				1356E7632B5C275D00DCE99E /* SplashScreenView.swift in Sources */,
 				1356E7612B5C275D00DCE99E /* RendezvousApp.swift in Sources */,
+				137199E32B5F51EC00936C13 /* InputView.swift in Sources */,
 				1356E7752B5C2D6E00DCE99E /* EventView.swift in Sources */,
 				1356E7792B5C2DA000DCE99E /* NotificationView.swift in Sources */,
 			);
