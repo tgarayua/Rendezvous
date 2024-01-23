@@ -20,6 +20,8 @@
 		137199E02B5F503700936C13 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137199DF2B5F503700936C13 /* LoginView.swift */; };
 		137199E32B5F51EC00936C13 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137199E22B5F51EC00936C13 /* InputView.swift */; };
 		137199E52B5F586C00936C13 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137199E42B5F586C00936C13 /* RegistrationView.swift */; };
+		137199E92B5F5F6700936C13 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137199E82B5F5F6600936C13 /* SettingsRowView.swift */; };
+		137199EB2B5F664500936C13 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137199EA2B5F664500936C13 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		137199DF2B5F503700936C13 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		137199E22B5F51EC00936C13 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		137199E42B5F586C00936C13 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		137199E82B5F5F6600936C13 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		137199EA2B5F664500936C13 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		1356E7712B5C28E000DCE99E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				137199EA2B5F664500936C13 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				137199E22B5F51EC00936C13 /* InputView.swift */,
+				137199E82B5F5F6600936C13 /* SettingsRowView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137199EB2B5F664500936C13 /* User.swift in Sources */,
 				137199E52B5F586C00936C13 /* RegistrationView.swift in Sources */,
 				1356E77B2B5C2DBF00DCE99E /* SettingsView.swift in Sources */,
 				1356E7772B5C2D7F00DCE99E /* CalendarView.swift in Sources */,
@@ -221,6 +228,7 @@
 				1356E7632B5C275D00DCE99E /* SplashScreenView.swift in Sources */,
 				1356E7612B5C275D00DCE99E /* RendezvousApp.swift in Sources */,
 				137199E32B5F51EC00936C13 /* InputView.swift in Sources */,
+				137199E92B5F5F6700936C13 /* SettingsRowView.swift in Sources */,
 				1356E7752B5C2D6E00DCE99E /* EventView.swift in Sources */,
 				1356E7792B5C2DA000DCE99E /* NotificationView.swift in Sources */,
 			);
