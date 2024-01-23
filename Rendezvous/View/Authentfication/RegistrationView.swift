@@ -115,10 +115,11 @@ extension RegistrationView: AuthentificationFormProtocol {
         return !email.isEmpty
         && email.contains("@")
         && email.contains(".")
+        && !fullName.isEmpty
+        && fullName.contains(" ")
         && !password.isEmpty
         && password.count > 5
         && confirmPassword == password
-        && !fullName.isEmpty
     }
 }
 
