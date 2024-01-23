@@ -10,6 +10,9 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
+    @Environment(\.colorScheme) var colorScheme
+    @EnvironmentObject var viewModel: AuthViewModel
+    
     
     var body: some View {
         NavigationStack {
@@ -20,7 +23,12 @@ struct LoginView: View {
                     .foregroundColor(.orange)
                     .scaledToFill()
                     .frame(width: 100, height: 120)
-                    .padding(.vertical, 32)
+                    .padding(.top, 32)
+                Text("Rendezvous")
+                    .font(Font.custom("Baskerville-Bold", size: 26))
+                    .foregroundColor(colorScheme == .dark ? .white : .black)
+                    .background(colorScheme == .dark ? .black : .white)
+                
                 // form field
                 VStack(spacing: 24) {
                     InputView(text: $email,
@@ -37,7 +45,9 @@ struct LoginView: View {
                 .padding(.top, 12)
                 // sign in button
                 Button {
-                    print("Log user in...")
+                    Task {
+                        try await viewModel.signIn(withEmail: email, password: password)
+                    }
                 } label: {
                     HStack {
                         Text("SIGN IN")

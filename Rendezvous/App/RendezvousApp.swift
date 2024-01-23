@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct RendezvousApp: App {
+    @StateObject var viewModel = AuthViewModel()
+    
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
+                .environmentObject(viewModel)
         }
     }
 }

@@ -10,32 +10,40 @@ import SwiftUI
 
 
 struct NavigationBarView: View {
+    @EnvironmentObject var viewModel: AuthViewModel
+    
     var body: some View {
-        TabView {
-            HomeView()
-                .tabItem {
-                    Image(systemName: "house")
+        Group {
+            if viewModel.userSession != nil {
+                TabView {
+                    HomeView()
+                        .tabItem {
+                            Image(systemName: "house")
+                        }
+                    
+                    EventView()
+                        .tabItem {
+                            Image(systemName: "square.and.pencil.circle")
+                        }
+                    
+                    CalendarView()
+                        .tabItem {
+                            Image(systemName: "calendar.circle.fill")
+                        }
+                    
+                    NotificationView()
+                        .tabItem {
+                            Image(systemName: "bell.fill")
+                        }
+                    
+                    SettingsView()
+                        .tabItem {
+                            Image(systemName: "gearshape.fill")
+                        }
                 }
-            
-            EventView()
-                .tabItem {
-                    Image(systemName: "square.and.pencil.circle")
-                }
-            
-            CalendarView()
-                .tabItem {
-                    Image(systemName: "calendar.circle.fill")
-                }
-            
-            NotificationView()
-                .tabItem {
-                    Image(systemName: "bell.fill")
-                }
-            
-            SettingsView()
-                .tabItem {
-                    Image(systemName: "gearshape.fill")
-                }
+            } else {
+                LoginView()
+            }
         }
     }
 }
